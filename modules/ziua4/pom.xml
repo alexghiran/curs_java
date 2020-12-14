@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ziua4</artifactId>
+    <packaging>jar</packaging>
+
+    <name>ziua4</name>
+    <version>1.0</version>
+    <description>Exemple practice din prima zi</description>
+
+    <parent>
+        <artifactId>CursJavaApp</artifactId>
+        <groupId>ro.trc.curs</groupId>
+        <version>1.0.0</version>
+        <relativePath>../..</relativePath>
+    </parent>
+
+    <properties>
+        <module.name>${name}</module.name>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+
+    </dependencies>
+
+
+    <build>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources/</directory>
+            </resource>
+            <resource>
+                <directory>${project.basedir}/src/profiles/${build.profile.id}/resources</directory>
+            </resource>
+        </resources>
+
+    </build>
+
+</project>
