@@ -39,6 +39,7 @@ public class ChestionarApp {
      * </p>
      */
     public void executa(Properties properties) {
+
         this.loadIntrebari(properties);
         Set<Map.Entry<Integer, String>> setIntrebari = this.INTREBARI.entrySet();
         int indexIntrebare;
@@ -49,11 +50,11 @@ public class ChestionarApp {
          * inregistreaza raspunsul utilizatorului.
          *
          * */
-        for (Map.Entry<Integer, String> intrebare : setIntrebari) {
-            indexIntrebare = intrebare.getKey();
+        for (Map.Entry<Integer, String> grupIntrebare : setIntrebari) {
+            indexIntrebare = grupIntrebare.getKey();
 
             //afiseaza intrebarea
-            this.afiseazaIntrebare(intrebare);
+            this.afiseazaIntrebare(grupIntrebare);
 
             //afiseaza optiunile
             this.afiseazaOptiuni(indexIntrebare);
