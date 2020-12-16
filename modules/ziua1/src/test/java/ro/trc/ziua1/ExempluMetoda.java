@@ -23,7 +23,7 @@ public class ExempluMetoda {
         numere[1] = 5;
         numere[2] = 6;
 
-        afiseazaArray(numere);
+        afiseazaNumere3(numere);
     }
 
     @Test
@@ -40,10 +40,10 @@ public class ExempluMetoda {
     public void afiseaza2Numere() throws Exception {
         int[] numere = new int[]{7, 8};
 
-        afiseazaArray(numere);
+        afiseazaNumere3(numere);
     }
 
-    private void afiseazaArray(int[] sirNumere) throws Exception {
+    public void afiseazaNumere3(int[] sirNumere) throws Exception {
         for (int i = 0; i < sirNumere.length; i++) {
             String mesaj = extrageValoarea("afiseazaNumere.text");
             System.out.println(mesaj + sirNumere[i]);
