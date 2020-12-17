@@ -28,6 +28,8 @@ public class ComparatiiTelefon {
         List<Telefon> listaTelofoane = Arrays.asList(telefonA, telefonB, telefonC, telefonD, telefonE);
         Collections.sort(listaTelofoane);
 
+
+
         for (Telefon telefon : telefonList) {
             System.out.println(telefon);
         }
