@@ -11,6 +11,10 @@ public class TesteZiua2 {
     }
 
 
+    @Test
+    public void convertToBinaryTest() {
+        convertToBinary(17);
+    }
     private void convertToBinary(final int valoare) {
         int initial = valoare;
         StringBuilder rezulatBinar = new StringBuilder();

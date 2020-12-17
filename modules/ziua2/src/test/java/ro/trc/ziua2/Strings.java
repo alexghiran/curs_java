@@ -30,8 +30,8 @@ public class Strings {
     public void compareWithEquals() {
         String abc = "abc";
         String neoptimizat = unStringNeoptimizatDeCompilator("abc     ");
-        System.out.println(abc == neoptimizat ?
-                "Nu sunt egale [" + abc + "] si [" + neoptimizat + "]" :
+        System.out.println(abc.equals(neoptimizat) ?
+                "Sunt egale [" + abc + "] si [" + neoptimizat + "]" :
                 "Nu sunt egale [" + abc + "] si [" + neoptimizat + "]");
     }
 
