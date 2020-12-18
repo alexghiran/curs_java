@@ -28,6 +28,11 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ro.trc.curs</groupId>
+            <artifactId>ziua3</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 

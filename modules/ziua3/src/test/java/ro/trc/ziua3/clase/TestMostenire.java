@@ -1,8 +1,6 @@
 package ro.trc.ziua3.clase;
 
 import org.junit.jupiter.api.Test;
-import sun.tools.jconsole.Tab;
-
 
 import java.time.LocalDate;
 import java.time.Month;
