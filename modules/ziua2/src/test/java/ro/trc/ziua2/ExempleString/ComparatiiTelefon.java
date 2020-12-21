@@ -29,10 +29,16 @@ public class ComparatiiTelefon {
         Collections.sort(listaTelofoane);
 
 
-
+        System.out.println("Aceasta este lista initiala, fara nicio ordine predictibila");
         for (Telefon telefon : telefonList) {
             System.out.println(telefon);
         }
+
+        System.out.println("=".repeat(10));
+
+        listaTelofoane.forEach(System.out::println);
+
+
 
     }
 }

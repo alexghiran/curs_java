@@ -72,7 +72,7 @@ public class Telefon implements Comparable<Telefon> {
 
     @Override
     public int compareTo(Telefon o) {
-        System.out.println("urmeaza sa facem comparatia");
+//        System.out.println("urmeaza sa facem comparatia");
 
         if (this.pret - o.getPret() < 0) {
             return -1;

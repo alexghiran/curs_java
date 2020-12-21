@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 
 public class DataTest {
+
+    /**
+     * acesta este un comentariu valid javadoc
+     */
     @Test
     public void domeniuData() {
         System.out.println("Data minima in JDK este " + LocalDate.MIN);

@@ -23,7 +23,6 @@ public class ListaFructe {
         return Arrays.asList(f1, f2, f3, f4, f5, f6, f7, f8, f9);
     }
 
-
     @Test
     public void listaFructe() {
 
@@ -56,18 +55,13 @@ public class ListaFructe {
         separator();
 
 
-        List<Fruct> incepeCuM = fructe.stream()
-                .filter(FiltreFructe::incepeCuM)
-                .collect(Collectors.toList());
+        List<Fruct> incepeCuM = fructe.stream().filter(FiltreFructe::incepeCuM).collect(Collectors.toList());
 
         incepeCuM.forEach(System.out::println);
 
         separator();
 
-        List<Fruct> incepeCuA = fructe.stream()
-                .filter(FiltreFructe::incepeCuA)
-                .collect(Collectors.toList());
-
+        List<Fruct> incepeCuA = fructe.stream().filter(FiltreFructe::incepeCuA).collect(Collectors.toList());
         incepeCuA.forEach(System.out::println);
     }
 
